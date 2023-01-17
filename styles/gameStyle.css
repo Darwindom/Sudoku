@@ -1,0 +1,89 @@
+body {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgb(100, 100, 122);
+    color: azure;
+}
+
+/* GamePlay */
+
+
+#board {
+    width: 450px;
+    height: 450px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    background-color: rgb(31, 30, 37);
+    /* Text */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tile:hover {
+    border-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.undo{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#digits {
+    width: 450px;
+    height: 50px;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.number {
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgb(110, 108, 135);
+    border-radius: 5px;
+    background-color: black;
+    color: rgb(172, 172, 189);
+    margin: 2px;
+
+    /* Text */
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.number:hover {
+    background-color: rgb(20, 20, 20);
+    cursor: pointer;
+}
+
+.number-selected {
+    font-size: 35px;
+    color: white;
+}
+
+.tile-start {
+    background-color: rgb(65, 65, 71);
+}
+
+.horizontal-line {
+    border-bottom: 1px solid rgb(254, 254, 254);
+}
+
+.vertical-line {
+    border-right: 1px solid rgb(248, 248, 248);
+}
